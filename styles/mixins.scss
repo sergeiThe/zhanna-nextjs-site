@@ -69,7 +69,8 @@
 }
 
 @mixin myBtn($bg-color, $text-color) {
-    a {
+    a,
+    button {
         display: inline-block;
 
         background-color: $bg-color;
