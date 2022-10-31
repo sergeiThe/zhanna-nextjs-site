@@ -32,11 +32,6 @@
     position: absolute;
     bottom: 20px;
     right: 5rem;
-
-    @include respond(450) {
-        right: 2rem;
-        bottom: 7rem;
-    }
 }
 
 .text {
