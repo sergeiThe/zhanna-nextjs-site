@@ -83,12 +83,12 @@ section {
 
 .header-not-home {
     flex-basis: 30%;
-    animation: headerHomeClosed 0.2s ease-out backwards;
+    animation: headerHomeClosed 0.4s ease-out 0.2s backwards;
 }
 
 .main-not-home {
     flex-basis: 70%;
-    animation: mainHomeClosed 0.2s ease-out backwards;
+    animation: mainHomeClosed 0.4s ease-out 0.2s backwards;
 }
 
 .bg-img {
