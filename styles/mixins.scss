@@ -1,0 +1,92 @@
+@mixin respond($bp) {
+    @if $bp == mobile {
+        @media (max-width: 700px) {
+            @content;
+        }
+    }
+
+    @if $bp == tablet-portrait {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @if $bp == desktop {
+        @media (min-width: 1300px) {
+            @content;
+        }
+    }
+
+    @if $bp == big-desktop {
+        @media (min-width: 1800px) {
+            @content;
+        }
+    }
+
+    @if $bp == 1000 {
+        @media (max-width: 1000px) {
+            @content;
+        }
+    }
+
+    @if $bp == 770 {
+        @media (max-width: 770px) {
+            @content;
+        }
+    }
+}
+
+@mixin myScrollBar {
+    &::-webkit-scrollbar {
+        width: 20px;
+        background: #7e7e7e;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: $text-color-primary;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(to left, black, $text-color-primary);
+        border-radius: 30px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(
+            to left,
+            rgb(105, 105, 105),
+            $text-color-primary
+        );
+    }
+}
+
+@mixin myBtn($bg-color, $text-color) {
+    a {
+        display: inline-block;
+
+        background-color: $bg-color;
+        padding: 12px 30px 13px 25px;
+        color: $text-color;
+        border-radius: 100px;
+        border: 2px solid $bg-color;
+        font-weight: 700;
+
+        transition: all 0.1s;
+
+        margin-top: 10px;
+
+        .scissors {
+            position: relative;
+            top: 2px;
+            left: -5px;
+        }
+
+        &:hover {
+            color: $bg-color;
+            background-color: transparent;
+        }
+    }
+}

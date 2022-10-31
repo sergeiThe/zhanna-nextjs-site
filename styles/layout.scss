@@ -1,0 +1,72 @@
+header {
+    padding: 3rem 5rem;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+    background-color: $text-color-primary;
+}
+
+section {
+    padding: 8rem;
+    width: 60%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+        border-left: 3px solid $text-color-secondary;
+        padding-left: 2rem;
+    }
+}
+
+@include respond(1000) {
+    section {
+        padding: 5rem;
+        width: 70%;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            border-left: none;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        a {
+            text-align: center;
+        }
+    }
+}
+
+.header-home {
+    flex-basis: 100%;
+    animation: headerHomeOpened 0.5s ease-out 0.2s backwards;
+}
+
+.main-home {
+    flex-basis: 0%;
+    animation: mainHomeOpened 0.5s ease-out 0.2s backwards;
+}
+
+.header-not-home {
+    flex-basis: 30%;
+    animation: headerHomeClosed 0.2s ease-out backwards;
+}
+
+.main-not-home {
+    flex-basis: 70%;
+    animation: mainHomeClosed 0.2s ease-out backwards;
+}
+
+.bg-img {
+}

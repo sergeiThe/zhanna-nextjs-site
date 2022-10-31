@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+.icons {
+    display: flex;
+    gap: 10px;
+
+    & > * {
+        font-size: 2.5rem;
+        color: $text-color-primary;
+        transition: all 0.1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.nav {
+    position: absolute;
+    top: 50%;
+    right: 5rem;
+    transform: translateY(-50%);
+
+    ul {
+        list-style: none;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        li {
+            cursor: pointer;
+            
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

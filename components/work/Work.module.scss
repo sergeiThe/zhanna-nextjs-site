@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.work {
+    width: 70%;
+    height: 100%;
+    overflow-y: scroll;
+    ul {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        justify-content: left;
+    }
+
+    @include respond(1000) {
+        ul {
+            justify-content: center;
+        }
+    }
+
+    @include myScrollBar;
+
+    .img {
+    }
+}

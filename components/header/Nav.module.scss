@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.nav {
+    ul {
+        display: flex;
+        gap: 7rem;
+        list-style: none;
+    }
+
+    @include respond(1000) {
+        ul {
+            gap: 3rem;
+        }
+    }
+
+    li {
+        color: $text-color-primary;
+        cursor: pointer;
+
+        a {
+            color: inherit;
+        }
+
+        transition: all 0.1s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

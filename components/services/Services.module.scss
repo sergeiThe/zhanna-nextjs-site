@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.services {
+    ul {
+        width: 100%;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3 {
+        text-align: right;
+        flex-basis: 50%;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid black;
+
+        font-size: 2rem;
+    }
+
+    @include myBtn($text-color-secondary, $text-color-primary);
+
+    .pris {
+        flex-basis: 50%;
+
+        span {
+            font-size: 2rem;
+        }
+    }
+}

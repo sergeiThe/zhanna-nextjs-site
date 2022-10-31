@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+.header {
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+}
+
+.hat {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 7rem;
+
+    & > * {
+        z-index: 10;
+    }
+}
+
+@include respond(tablet-portrait) {
+    .hat {
+        padding: 0 3rem;
+    }
+}
+
+.icons {
+    position: absolute;
+    bottom: 20px;
+    right: 5rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+
+    & > * {
+        color: $text-color-primary;
+    }
+
+    @include myBtn($text-color-primary, $text-color-secondary);
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img {
+    z-index: -100;
+}

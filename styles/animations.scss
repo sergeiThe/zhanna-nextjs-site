@@ -1,0 +1,39 @@
+@keyframes mainHomeOpened {
+    0% {
+        flex-basis: 70%;
+    }
+
+    100% {
+        flex-basis: 0%;
+    }
+}
+
+@keyframes headerHomeOpened {
+    0% {
+        flex-basis: 30%;
+    }
+
+    100% {
+        flex-basis: 100%;
+    }
+}
+
+@keyframes mainHomeClosed {
+    0% {
+        flex-basis: 0%;
+    }
+
+    100% {
+        flex-basis: 70%;
+    }
+}
+
+@keyframes headerHomeClosed {
+    0% {
+        flex-basis: 100%;
+    }
+
+    100% {
+        flex-basis: 30%;
+    }
+}
