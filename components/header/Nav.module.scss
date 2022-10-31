@@ -28,3 +28,11 @@
         }
     }
 }
+
+@include respond(mobile) {
+    .nav {
+        ul {
+            flex-direction: column;
+        }
+    }
+}

@@ -2,6 +2,12 @@ header {
     padding: 3rem 5rem;
 }
 
+@include respond(mobile) {
+    header {
+        padding: 5rem 5rem;
+    }
+}
+
 body {
     position: relative;
     overflow: hidden;
@@ -44,6 +50,22 @@ section {
 
         a {
             text-align: center;
+        }
+    }
+}
+
+@include respond(mobile) {
+    section {
+        align-items: flex-start;
+
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            border-left: none;
+            padding-left: 0;
+            text-align: left;
         }
     }
 }
