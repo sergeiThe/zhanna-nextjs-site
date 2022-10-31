@@ -1,4 +1,9 @@
 @mixin respond($bp) {
+    @if $bp == 450 {
+        @media (max-width: 500px) {
+            @content;
+        }
+    }
     @if $bp == mobile {
         @media (max-width: 700px) {
             @content;

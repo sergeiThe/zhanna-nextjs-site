@@ -1,8 +1,14 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 .nav {
     position: absolute;
     top: 50%;
     right: 5rem;
     transform: translateY(-50%);
+
+    @include respond(450) {
+        right: 2rem;
+    }
 
     ul {
         list-style: none;
@@ -13,7 +19,6 @@
 
         li {
             cursor: pointer;
-            
 
             &:hover {
                 transform: scale(1.1);

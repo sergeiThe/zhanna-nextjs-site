@@ -14,31 +14,7 @@ function Header() {
     let isHomeOpenClass =
         navCtx.currentPage === PAGES.HOME ? "header-home" : "header-not-home";
 
-    let currentBgImg;
-
-    switch (navCtx.currentPage) {
-        case PAGES.HOME:
-            currentBgImg = "11";
-            break;
-
-        case PAGES.WORK:
-            currentBgImg = "22";
-            break;
-        case PAGES.ABOUT:
-            currentBgImg = "33";
-            break;
-
-        case PAGES.SERVICES:
-            currentBgImg = "44";
-            break;
-
-        case PAGES.CONTACT:
-            currentBgImg = "55";
-            break;
-        default:
-            currentBgImg = "11";
-            break;
-    }
+    let currentBgImg = "11";
 
     return (
         <header className={`${styles.header} ${isHomeOpenClass}`}>
