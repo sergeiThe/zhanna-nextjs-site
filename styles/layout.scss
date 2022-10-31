@@ -71,6 +71,12 @@ section {
     }
 }
 
+@include respond(450) {
+    section {
+        padding: 3rem;
+    }
+}
+
 .header-home {
     flex-basis: 100%;
     animation: headerHomeOpened 0.5s ease-out backwards;

@@ -13,8 +13,4 @@
             transform: scale(1.1);
         }
     }
-
-    @include respond(450) {
-        display: none;
-    }
 }

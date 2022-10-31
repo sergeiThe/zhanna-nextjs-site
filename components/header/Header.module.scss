@@ -42,6 +42,13 @@
     right: 5rem;
 }
 
+@include respond(450) {
+    .icons {
+        right: 2rem;
+        bottom: 10rem;
+    }
+}
+
 .text {
     display: flex;
     flex-direction: column;

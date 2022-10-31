@@ -37,6 +37,11 @@ h2 {
     font-weight: 700;
     padding: 3rem 0;
 }
+@include respond(mobile) {
+    h2 {
+        padding-top: 10rem;
+    }
+}
 h3,
 span {
     font-size: 2rem;
