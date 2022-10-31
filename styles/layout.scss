@@ -11,6 +11,7 @@ header {
 body {
     position: relative;
     overflow: hidden;
+    background-color: $text-color-secondary;
 }
 
 main {
@@ -72,12 +73,12 @@ section {
 
 .header-home {
     flex-basis: 100%;
-    animation: headerHomeOpened 0.5s ease-out 0.2s backwards;
+    animation: headerHomeOpened 0.5s ease-out backwards;
 }
 
 .main-home {
     flex-basis: 0%;
-    animation: mainHomeOpened 0.5s ease-out 0.2s backwards;
+    animation: mainHomeOpened 0.5s ease-out backwards;
 }
 
 .header-not-home {
