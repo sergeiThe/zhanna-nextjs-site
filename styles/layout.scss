@@ -17,6 +17,7 @@ body {
 main {
     height: 100vh;
     background-color: $text-color-primary;
+    z-index: 5;
 }
 
 section {
@@ -79,22 +80,22 @@ section {
 
 .header-home {
     flex-basis: 100%;
-    animation: headerHomeOpened 0.5s ease-out backwards;
+    animation: headerHomeOpened 0.2s ease-out backwards;
 }
 
 .main-home {
     flex-basis: 0%;
-    animation: mainHomeOpened 0.5s ease-out backwards;
+    animation: mainHomeOpened 0.2s ease-out backwards;
 }
 
 .header-not-home {
     flex-basis: 30%;
-    animation: headerHomeClosed 0.4s ease-out 0.2s backwards;
+    animation: headerHomeClosed 0.1s ease-out backwards;
 }
 
 .main-not-home {
     flex-basis: 70%;
-    animation: mainHomeClosed 0.4s ease-out 0.2s backwards;
+    animation: mainHomeClosed 0.1s ease-out backwards;
 }
 
 .bg-img {

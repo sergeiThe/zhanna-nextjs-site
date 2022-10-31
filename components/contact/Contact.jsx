@@ -21,14 +21,23 @@ function Contact() {
                 Bestill time
             </a>
             <div className={styles["contact-info"]}>
-                <div className={styles.phone}>
+                <a
+                    className={styles.phone}
+                    href={`tel:+47${copy.contact.telefon}`}
+                >
                     <RiPhoneLine className={styles.icon} />
                     <span>{copy.contact.telefon}</span>
-                </div>
-                <div className={styles.phone}>
+                </a>
+                <a
+                    href="https://goo.gl/maps/zsZx7HjPSKJnxxYS6"
+                    rel="noreferrer"
+                    target="_blank"
+                    className={styles.address}
+                >
                     <MdOutlineLocationCity className={styles.icon} />
+
                     <span>{copy.contact.address}</span>
-                </div>
+                </a>
             </div>
 
             <iframe

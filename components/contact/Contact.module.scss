@@ -29,9 +29,26 @@
         padding: 2rem 0;
         align-self: flex-start;
 
-        span {
+        & > * {
+            transition: all 0.1s;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            color: $text-color-secondary;
+            display: block;
+            padding: 1rem 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        & > *:hover {
+            transform: scale(1.1);
+        }
+
+        a {
             font-weight: 700;
-            font-family: "Open Sans", sans-serif;
+            // font-family: "Open Sans", sans-serif;
+            font-size: 1.5rem;
         }
     }
 

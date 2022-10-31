@@ -40,7 +40,13 @@ function Header() {
                             <SocialIcons />
                             <Nav />
                         </div>
-                        <div className={styles.text}>
+                        <div
+                            className={`${styles.text} ${
+                                navCtx.currentPage === PAGES.HOME
+                                    ? styles["home-open-text"]
+                                    : styles["home-closed-text"]
+                            }`}
+                        >
                             <h1>{copy.header.title}</h1>
                             <p>{copy.header.subTitle}</p>
                             <a
@@ -56,7 +62,6 @@ function Header() {
                                     navCtx.goToPage(PAGES.ABOUT);
                                 }}
                             >
-                                <RiScissors2Line className={styles.scissors} />
                                 Se all infoen
                             </button>
                         </div>

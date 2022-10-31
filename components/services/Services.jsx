@@ -17,7 +17,7 @@ function Services() {
             <p>{copy.services.subTitle}</p>
             <a href={copy.links.booking} target="_blank" rel="noreferrer">
                 <RiScissors2Line className={styles.scissors} />
-                Se tjenester og priser på onlinebooq
+                Se på onlinebooq
             </a>
         </motion.section>
     );

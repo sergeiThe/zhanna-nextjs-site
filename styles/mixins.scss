@@ -69,8 +69,7 @@
 }
 
 @mixin myBtn($bg-color, $text-color) {
-    a,
-    button {
+    a {
         display: inline-block;
 
         background-color: $bg-color;
@@ -93,6 +92,38 @@
         &:hover {
             color: $bg-color;
             background-color: transparent;
+        }
+    }
+
+    button {
+        display: none;
+    }
+
+    @include respond(mobile) {
+        button {
+            display: inline-block;
+
+            background-color: transparent;
+            padding: 12px 30px 13px 25px;
+            color: $bg-color;
+            border-radius: 100px;
+            border: 2px solid $bg-color;
+            font-weight: 700;
+
+            transition: all 0.1s;
+
+            margin-top: 10px;
+
+            .scissors {
+                position: relative;
+                top: 2px;
+                left: -5px;
+            }
+
+            &:hover {
+                color: $text-color;
+                background-color: $bg-color;
+            }
         }
     }
 }
